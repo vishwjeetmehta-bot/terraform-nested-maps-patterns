@@ -1,0 +1,17 @@
+resource_group_name = "rg-enterprise-storage"
+location            = "eastus"
+
+storage_accounts_map = {
+  "stgenterprise01" = {
+    rgname     = "rg-enterprise-storage"
+    location   = "eastus"
+    tier       = "Standard"
+    redundancy = "LRS"
+  }
+  "stgenterprise02" = {
+    rgname     = "rg-enterprise-storage"
+    location   = "eastus"
+    tier       = "Standard"
+    redundancy = "GRS"
+  }
+}
